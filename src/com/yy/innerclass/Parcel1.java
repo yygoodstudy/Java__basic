@@ -22,6 +22,13 @@ public class Parcel1 {
         String readLabel() {
             return label;
         }
+
+        @Override
+        public String toString() {
+            return "Destination{" +
+                    "label='" + label + '\'' +
+                    '}';
+        }
     }
 
     public Destination to(String s){
@@ -46,6 +53,7 @@ public class Parcel1 {
         Parcel1 parcel1 = new Parcel1();
         parcel1.ship("All for love");
         Parcel1.Destination destination = parcel1.to("ssssS");
+        System.out.println("destination = " + destination);
         Parcel1.Contents contents = parcel1.contents();
     }
 }

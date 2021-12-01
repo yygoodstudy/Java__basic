@@ -20,7 +20,5 @@ public class RandomAccessTest {
         RandomAccessFile raf = new RandomAccessFile(fileDemo,"rw");
         raf.write((byte)01111111);
         raf.write('A');
-
-
     }
 }

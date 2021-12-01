@@ -5,15 +5,16 @@ package com.yy.extend.polymorphic;
  */
 public class CustomerService {
 
-    public static Language contact(String areaCode){
+    public static Language contact(String areaCode) {
         if (areaCode.equals("33")) {
             return new English();
-        }else if (areaCode.equals("86")){
+        } else if (areaCode.equals("86")) {
             return new Chinese();
-        }else {
+        } else {
             return new French();
         }
     }
+
     public static void main(String[] args) {
         Chinese chinese = new Chinese();
         chinese.voice();

@@ -6,7 +6,7 @@ package com.yy.singleton;
  * 优点：线程安全，延迟加载。效率较高
  */
 public class Singleton4 {
-    private static Singleton4 singleton4;
+    private static volatile Singleton4 singleton4;
 
     private Singleton4() {
     }

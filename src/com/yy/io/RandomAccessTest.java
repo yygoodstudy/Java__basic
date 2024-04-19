@@ -13,7 +13,7 @@ public class RandomAccessTest {
         if (!file.exists()) {
             file.mkdir(); // 创建目录
         }
-        File fileDemo = new File("demo", "test.txt");
+        File fileDemo = new File("demo", "test.properties");
         if (!fileDemo.exists()) {
             fileDemo.createNewFile(); // 创建该文件
         }

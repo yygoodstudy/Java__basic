@@ -7,7 +7,7 @@ import java.io.*;
  */
 public class DataOutputStreamTest {
     public static void main(String[] args) throws IOException {
-        File file = new File("demo/test.txt");
+        File file = new File("demo/test.properties");
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         DataOutputStream dos = new DataOutputStream(fileOutputStream);
         dos.writeDouble(3.33d);

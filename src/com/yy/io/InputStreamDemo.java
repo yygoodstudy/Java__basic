@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
  */
 public class InputStreamDemo {
     public static void main(String[] args) throws IOException {
-        File file = new File("demo/test.txt");
+        File file = new File("demo/test.properties");
         FileOutputStream fis = null;
         try {
             fis = new FileOutputStream(file, true);

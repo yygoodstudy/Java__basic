@@ -9,10 +9,10 @@ import java.math.BigDecimal;
 public class ArrayAvg {
 
     public static void main(String[] args) {
-        int[] arr = {1,2,2,2};
+        int[] arr = {1, 2, 2, 2};
         double arrayAverage = getArrayAverage(arr);
         System.out.println("arrayAverage = " + arrayAverage);
-        double a = (float)5/3;
+        double a = (float) 5 / 3;
         System.out.println(a);
     }
 
@@ -24,8 +24,8 @@ public class ArrayAvg {
             for (int i : arr) {
                 sum += i;
             }
-            BigDecimal bg = new BigDecimal((float)sum/arr.length);
-            double f1 = bg.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();
+            BigDecimal bg = new BigDecimal((float) sum / arr.length);
+            double f1 = bg.setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue();
             return f1;
         }
     }

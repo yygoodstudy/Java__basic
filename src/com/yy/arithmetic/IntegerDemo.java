@@ -11,8 +11,6 @@ public class IntegerDemo {
 
         Integer c = new Integer(127);
         Integer d = 127;
-        System.out.println( c == d); // false;
-
-
+        System.out.println(c == d); // false;
     }
 }

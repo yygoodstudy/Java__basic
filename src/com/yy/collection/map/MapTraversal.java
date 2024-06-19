@@ -34,12 +34,14 @@ public class MapTraversal {
         }
 
         System.out.println("----------------------------------");
+
         // 3.通过EntrySet的迭代器遍历
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<String, String> entry = iterator.next();
             System.out.println(entry.getKey() + ":" + entry.getValue());
         }
+        System.out.println("----------------------------------");
 
         // 4.通过KeySet的迭代器遍历
         Iterator<String> keyIterator = map.keySet().iterator();
@@ -49,12 +51,12 @@ public class MapTraversal {
         }
 
         // 通过遍历entrySet删除map集合中的元素时会报错
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            if ("王荣".equals(entry.getKey())) {
-                map.remove("王荣");
-                continue;
-            }
-        }
+//        for (Map.Entry<String, String> entry : map.entrySet()) {
+//            if ("王荣".equals(entry.getKey())) {
+//                map.remove("王荣");
+//                continue;
+//            }
+//        }
 
         // 正确的动态删除map集合中的元素
         Iterator<Map.Entry<String, String>> entryIterator = map.entrySet().iterator();

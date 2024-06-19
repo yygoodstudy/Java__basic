@@ -12,5 +12,9 @@ public class ArrayDemo1 {
         Arrays.sort(nums);
         System.out.println();
         Arrays.stream(nums).forEach(System.out::print);
+        System.out.println("-------------------------");
+        System.out.println(int[].class);
+
+
     }
 }

@@ -79,7 +79,7 @@ class Teacher extends Person {
 //        pt.setAge(12);
 //        pt.setName("痴情冢");
 
-        Teacher teacher = new Teacher();
+        Teachr teacher = new Teachr();
 
     }
 }

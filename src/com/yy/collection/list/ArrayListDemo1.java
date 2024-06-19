@@ -10,6 +10,7 @@ import java.util.List;
 public class ArrayListDemo1 {
     public static void main(String[] args) {
         List<String> strings = new ArrayList<>();
+
         strings.add("a");
         strings.add("b");
         strings.add("c");
@@ -31,8 +32,8 @@ public class ArrayListDemo1 {
 //        strings.clear(); // 清空集合
         List<String> newStrings = new ArrayList<>(strings);
         strings.stream().forEach(x -> {
-            if ("zhangjie".equals(x)) {
-                newStrings.add("i love you forever");
+            if ("safsdf".equals(x)) {
+                newStrings.add("HHHH");
             }
         });
 

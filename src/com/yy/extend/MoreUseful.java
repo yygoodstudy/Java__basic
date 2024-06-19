@@ -17,6 +17,8 @@ public class MoreUseful extends Useful{
 class Rtti{
     public static void main(String[] args) {
         Useful[] usefuls = {new Useful(), new MoreUseful()};
+        MoreUseful moreUseful = new MoreUseful();
+        moreUseful.f();
 //        (MoreUseful)usefuls[0].f();
 //        (MoreUseful)usefuls[1].g();
     }
